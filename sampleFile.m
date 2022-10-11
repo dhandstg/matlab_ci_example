@@ -5,5 +5,5 @@ sample.txt
 %}
 
 function t = sampleFile
-    t = fileread('./sampleData.txt');
+    t = fileread('sampleData.txt');
 end
