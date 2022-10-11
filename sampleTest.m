@@ -4,4 +4,5 @@ end
 
 function testSamples(testCase)
     t = sampleFile;
-    testCase.assertEqual(t, "sample test...");;
+    testCase.assertEqual(t, "sample test...");
+end
