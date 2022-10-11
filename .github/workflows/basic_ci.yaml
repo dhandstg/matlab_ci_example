@@ -1,0 +1,21 @@
+name: matlab_sample_ci
+
+on:
+  push:
+    branches:
+    - master
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: 
+     - ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: List content
+        run: ls
+      - name: Set up MATLAB runner
+        uses: matlab-actions/setup-matlab@v0
+      - name: Run MATLAB tests
+        uses: matlab-actions/run-tests@v0
